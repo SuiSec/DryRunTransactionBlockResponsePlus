@@ -12,9 +12,9 @@ npm install dryruntransactionblockresponseplus
 
 ```typescript
 import { type DryRunTransactionBlockResponsePlus, parseDryRunResult } from 'dryruntransactionblockresponseplus';
-import { SuiClient } from "@mysten/sui.js/client";
+import { SuiClient } from "@mysten/sui/client";
 
-const dataSentToFullnode = await txb.build({ client: client });
+const dataSentToFullnode = await tx.build({ client: client });
 const res = await client.dryRunTransactionBlock({
   transactionBlock: dataSentToFullnode,
 });
